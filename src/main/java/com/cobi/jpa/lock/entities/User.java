@@ -1,14 +1,14 @@
-package com.cobi.jpa.lock.entity;
+package com.cobi.jpa.lock.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
+import org.hibernate.annotations.OptimisticLockType;
+import org.hibernate.annotations.OptimisticLocking;
 
 import javax.persistence.*;
 import java.util.List;
 
 @ToString
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -22,9 +22,14 @@ public class User {
     @Column(name = "name")
     private String name;
 
+
     @Column(name = "age")
     private int age;
 
-    @OneToMany(mappedBy = "user")
-    private List<Phone> phone;
+//    @OneToMany(mappedBy = "user")
+//    private List<Phone> phone;
+
+    public void addAge(){
+        age = age + 1;
+    }
 }

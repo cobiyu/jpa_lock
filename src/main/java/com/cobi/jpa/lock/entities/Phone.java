@@ -1,4 +1,4 @@
-package com.cobi.jpa.lock.entity;
+package com.cobi.jpa.lock.entities;
 
 
 import lombok.AllArgsConstructor;

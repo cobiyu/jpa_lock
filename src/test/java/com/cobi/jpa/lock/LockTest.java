@@ -1,6 +1,6 @@
 package com.cobi.jpa.lock;
 
-import com.cobi.jpa.lock.entity.User;
+import com.cobi.jpa.lock.entities.User;
 import com.cobi.jpa.lock.repositories.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
